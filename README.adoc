@@ -1,0 +1,6 @@
+Install and use:
+
+----
+$ pipx install git+https://github.com/alexpdp7/asciidoc-pycheck.git
+$ adoc_check_titlecase <asciidoc_files>
+----
