@@ -5,7 +5,7 @@ description = ""
 authors = ["alex <alex@pdp7.net>"]
 
 [tool.poetry.dependencies]
-python = ">=3.6"
+python = ">=3.6.2"
 appdirs = "^1.4.4"
 
 [tool.poetry.dev-dependencies]
@@ -22,3 +22,6 @@ adoc_check_titlecase = 'adoc_check.titlecase:main'
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
