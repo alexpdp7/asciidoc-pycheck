@@ -1,0 +1,5 @@
+- id: adoc_check_titlecase
+  name: check AsciiDoc title case
+  entry: adoc_check_titlecase
+  language: python
+  types: ['asciidoc']
