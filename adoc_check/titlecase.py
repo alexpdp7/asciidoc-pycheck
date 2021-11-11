@@ -80,6 +80,12 @@ TITLE_CASE_EXCEPTIONS = set(
 
 
 def is_titlecase(s):
+    """
+    >>> is_titlecase("This Is a Test")
+    (True, [])
+    >>> is_titlecase("This is a test")
+    (False, ['is', 'test'])
+    """
     # remove things in backticks, which should be ignored for title case
     s = re.sub("`[^`]*`", "", s)
 
